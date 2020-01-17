@@ -7,7 +7,7 @@ import numpy as np
 # from .base_model import BaseModel
 
 try:
-    import torch_geometric
+    import torch_geometric ##!
 except ImportError:
     pyg = False
     print("Failed to import PyTorch Geometric")

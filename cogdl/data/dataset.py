@@ -1,6 +1,6 @@
 import collections
 import os.path as osp
-
+import tensorflow as tf
 from .makedirs import makedirs
 
 
@@ -14,7 +14,7 @@ def files_exist(files):
     return all([osp.exists(f) for f in files])
 
 
-class Dataset():
+class Dataset(tf.data.Dataset):
     r"""Dataset base class for creating graph datasets.
     See `here <https://rusty1s.github.io/pycogdl/build/html/notes/
     create_dataset.html>`__ for the accompanying tutorial.

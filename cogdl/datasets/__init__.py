@@ -4,7 +4,7 @@ import os
 from cogdl.data.dataset import Dataset
 
 try:
-    import torch_geometric
+    import torch_geometric ##!
 except ImportError:
     pyg = False
 else:
